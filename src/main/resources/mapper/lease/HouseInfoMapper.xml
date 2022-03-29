@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pzhu.house.mapper.lease.HouseInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.lease.HouseInfo">
+        <id column="id" property="id" />
+        <result column="landlord_id" property="landlordId" />
+        <result column="title" property="title" />
+        <result column="price" property="price" />
+        <result column="deposit" property="deposit" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="district" property="district" />
+        <result column="address" property="address" />
+        <result column="compound_name" property="compoundName" />
+        <result column="facilities" property="facilities" />
+        <result column="describe" property="describe" />
+        <result column="rental_type" property="rentalType" />
+        <result column="type" property="type" />
+        <result column="area" property="area" />
+        <result column="status" property="status" />
+        <result column="contact_number" property="contactNumber" />
+        <result column="contact_name" property="contactName" />
+        <result column="revision" property="revision" />
+        <result column="created_by" property="createdBy" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_by" property="updatedBy" />
+        <result column="updated_time" property="updatedTime" />
+    </resultMap>
+
+</mapper>
