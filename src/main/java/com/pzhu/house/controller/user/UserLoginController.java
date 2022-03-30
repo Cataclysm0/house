@@ -2,12 +2,13 @@ package com.pzhu.house.controller.user;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.pzhu.house.model.dto.user.UserDTO;
-import com.pzhu.house.model.entity.system.SysUser;
+import com.pzhu.house.entity.system.SysUser;
 import com.pzhu.house.model.params.user.LoginParams;
 import com.pzhu.house.model.params.user.RegisterParams;
 import com.pzhu.house.model.support.AjaxResult;
 import com.pzhu.house.service.user.IUserLoginService;
 import com.pzhu.house.service.system.ISysUserService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Api(tags = "用户登录控制器")
 @RestController
 @RequestMapping("/user")
 public class UserLoginController {

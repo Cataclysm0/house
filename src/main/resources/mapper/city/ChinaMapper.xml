@@ -3,7 +3,7 @@
 <mapper namespace="com.pzhu.house.mapper.city.ChinaMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.city.China">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.city.China">
         <id column="id" property="id" />
         <result column="pid" property="pid" />
         <result column="name" property="name" />

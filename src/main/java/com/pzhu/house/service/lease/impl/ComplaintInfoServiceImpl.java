@@ -1,7 +1,7 @@
 package com.pzhu.house.service.lease.impl;
 
 import com.pzhu.house.mapper.lease.ComplaintInfoMapper;
-import com.pzhu.house.model.entity.lease.ComplaintInfo;
+import com.pzhu.house.entity.lease.ComplaintInfo;
 import com.pzhu.house.service.lease.IComplaintInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.pzhu.house.model.dto.lease;
 
 import com.pzhu.house.model.dto.base.OutputConverter;
-import com.pzhu.house.model.entity.lease.LeaseInfo;
+import com.pzhu.house.entity.lease.LeaseInfo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -34,6 +34,9 @@ public class LeaseInfoDTO implements OutputConverter<LeaseInfoDTO, LeaseInfo>, S
 
     @ApiModelProperty("租客电话")
     private String tenantPhonenumber;
+
+    @ApiModelProperty("租约状态 0-租期中 1-已退房")
+    private Short status;
 
     @ApiModelProperty("备注")
     private String remarks;

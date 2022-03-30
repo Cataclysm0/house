@@ -1,13 +1,12 @@
 package com.pzhu.house.model.dto.user;
 
 import com.pzhu.house.model.dto.base.OutputConverter;
-import com.pzhu.house.model.entity.system.SysUser;
+import com.pzhu.house.entity.system.SysUser;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 @Data
 @ApiModel("UserDTO")

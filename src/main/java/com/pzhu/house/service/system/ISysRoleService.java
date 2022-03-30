@@ -1,6 +1,6 @@
 package com.pzhu.house.service.system;
 
-import com.pzhu.house.model.entity.system.SysRole;
+import com.pzhu.house.entity.system.SysRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

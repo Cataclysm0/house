@@ -40,7 +40,7 @@ public class SaTokenConfigure implements WebMvcConfigurer {
         // 注册路由拦截器，自定义认证规则
         registry.addInterceptor(new SaRouteInterceptor((req, res, handler)->{
             SaRouter.match("/admin/**").notMatch("/admin/login").check(r -> StpUtil.checkRole("admin"));
-            SaRouter.match("/user/**").notMatch("/user/login", "/user/register").check(r -> StpUtil.checkRoleOr("common", "vip"));
+            SaRouter.match("/user/**").notMatch("/user/login", "/user/register").check(r -> StpUtil.checkRoleOr("admin", "common", "vip"));
         })).addPathPatterns("/**");
     }
 

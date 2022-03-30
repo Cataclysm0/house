@@ -1,4 +1,4 @@
-package com.pzhu.house.model.entity.system;
+package com.pzhu.house.entity.system;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 用户表
+ * 角色表
  * </p>
  *
  * @author WuSJ
@@ -26,52 +26,22 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("sys_user")
-@ApiModel(value = "SysUser对象", description = "用户表")
-public class SysUser extends Model<SysUser> {
+@TableName("sys_role")
+@ApiModel(value = "SysRole对象", description = "角色表")
+public class SysRole extends Model<SysRole> {
 
     @Serial
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty("用户ID")
+    @ApiModelProperty("角色ID")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    @ApiModelProperty("用户名")
-    private String username;
+    @ApiModelProperty("角色名称")
+    private String roleName;
 
-    @ApiModelProperty("密码")
-    private String password;
-
-    @ApiModelProperty("真实姓名")
-    private String realName;
-
-    @ApiModelProperty("身份证")
-    private String idCard;
-
-    @ApiModelProperty("性别 0 - 男, 1 - 女, 2 - 未知")
-    private Integer gender;
-
-    @ApiModelProperty("昵称")
-    private String nickname;
-
-    @ApiModelProperty("手机号")
-    private String phonenumber;
-
-    @ApiModelProperty("邮箱")
-    private String email;
-
-    @ApiModelProperty("头像")
-    private String avatar;
-
-    @ApiModelProperty("账号状态 0 - 正常, 1 - 停用")
-    private Integer status;
-
-    @ApiModelProperty("最后登录时间")
-    private LocalDateTime lastLoginDate;
-
-    @ApiModelProperty("最后登录IP")
-    private String lastLoginIp;
+    @ApiModelProperty("角色标识")
+    private String roleKey;
 
     @ApiModelProperty("乐观锁")
     @Version

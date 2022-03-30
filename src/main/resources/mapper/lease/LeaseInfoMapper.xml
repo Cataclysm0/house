@@ -3,10 +3,11 @@
 <mapper namespace="com.pzhu.house.mapper.lease.LeaseInfoMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.lease.LeaseInfo">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.lease.LeaseInfo">
         <id column="id" property="id"/>
         <result column="tenant_id" property="tenantId"/>
         <result column="landlord_id" property="landlordId"/>
+        <result column="house_id" property="houseId"/>
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
         <result column="rent" property="rent"/>
@@ -25,6 +26,7 @@
     <select id="selectLeaseDetails" parameterType="java.lang.Long" resultMap="BaseResultMap">
         select tenant_id,
                landlord_id,
+               house_id,
                start_date,
                end_date,
                rent,
@@ -32,6 +34,7 @@
                tenant_name,
                tenant_gender,
                tenant_phonenumber,
+               status,
                remarks,
                created_time
         from lease_info

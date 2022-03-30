@@ -9,7 +9,7 @@ import com.pzhu.house.common.constant.UserConstants;
 import com.pzhu.house.exception.BaseException;
 import com.pzhu.house.exception.captcha.CaptchaExpireException;
 import com.pzhu.house.exception.captcha.CaptchaIncorrectException;
-import com.pzhu.house.model.entity.system.SysUser;
+import com.pzhu.house.entity.system.SysUser;
 import com.pzhu.house.service.system.ISysUserRoleService;
 import com.pzhu.house.service.system.ISysUserService;
 import com.pzhu.house.service.user.IUserLoginService;
@@ -68,7 +68,7 @@ public class UserLoginServiceImpl implements IUserLoginService {
             sysUser.setPhonenumber(phonenumber);
             sysUser.setEmail(email);
             sysUser.setPassword(SecureUtil.sha256(password));
-            sysUser.setAvatar("http://127.0.0.1:9000/house/images/profile.png");
+            sysUser.setAvatar("/house/images/profile.png");
             sysUser.setStatus(0);
             sysUser.setCreatedBy("self");
             sysUser.setCreatedTime(LocalDateTime.now(Clock.system(ZoneId.systemDefault())));

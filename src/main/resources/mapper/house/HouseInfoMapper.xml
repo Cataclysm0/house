@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.pzhu.house.mapper.lease.HouseInfoMapper">
+<mapper namespace="com.pzhu.house.mapper.house.HouseInfoMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.lease.HouseInfo">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.house.HouseInfo">
         <id column="id" property="id" />
         <result column="landlord_id" property="landlordId" />
         <result column="title" property="title" />
@@ -15,7 +15,7 @@
         <result column="address" property="address" />
         <result column="compound_name" property="compoundName" />
         <result column="facilities" property="facilities" />
-        <result column="describe" property="describe" />
+        <result column="house_describe" property="houseDescribe" />
         <result column="rental_type" property="rentalType" />
         <result column="type" property="type" />
         <result column="area" property="area" />

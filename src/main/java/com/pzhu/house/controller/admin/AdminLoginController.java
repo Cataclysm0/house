@@ -2,8 +2,8 @@ package com.pzhu.house.controller.admin;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.pzhu.house.model.dto.admin.UserDTO;
-import com.pzhu.house.model.entity.admin.SysMenu;
-import com.pzhu.house.model.entity.system.SysUser;
+import com.pzhu.house.entity.admin.SysMenu;
+import com.pzhu.house.entity.system.SysUser;
 import com.pzhu.house.model.params.admin.LoginParams;
 import com.pzhu.house.model.support.AjaxResult;
 import com.pzhu.house.service.admin.IAdminLoginService;

@@ -1,7 +1,10 @@
 package com.pzhu.house.service.lease;
 
-import com.pzhu.house.model.entity.lease.LeaseInfo;
+import com.pzhu.house.model.lease.BriefLeaseInfo;
+import com.pzhu.house.entity.lease.LeaseInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -19,4 +22,6 @@ public interface ILeaseInfoService extends IService<LeaseInfo> {
      * @return
      */
     LeaseInfo getLeaseDetails(Long leaseId);
+
+    List<BriefLeaseInfo> getSummaryLeaseInfoList(Long loginId);
 }

@@ -1,7 +1,7 @@
 package com.pzhu.house.service.system.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.pzhu.house.model.entity.system.SysRole;
+import com.pzhu.house.entity.system.SysRole;
 import com.pzhu.house.mapper.system.SysRoleMapper;
 import com.pzhu.house.service.system.ISysRoleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

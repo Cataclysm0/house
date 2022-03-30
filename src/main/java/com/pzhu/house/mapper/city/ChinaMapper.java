@@ -1,7 +1,7 @@
 package com.pzhu.house.mapper.city;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.pzhu.house.model.entity.city.China;
+import com.pzhu.house.entity.city.China;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

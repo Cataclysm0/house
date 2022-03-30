@@ -1,4 +1,4 @@
-package com.pzhu.house.model.entity.city;
+package com.pzhu.house.entity.city;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

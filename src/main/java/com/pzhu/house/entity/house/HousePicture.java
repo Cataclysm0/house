@@ -1,4 +1,4 @@
-package com.pzhu.house.model.entity.lease;
+package com.pzhu.house.entity.house;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -13,32 +13,33 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 投诉信息表
+ * 房源图片表
  * </p>
  *
  * @author WuSJ
- * @since 2022-03-27
+ * @since 2022-03-29
  */
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("complaint_info")
-@ApiModel(value = "ComplaintInfo对象", description = "投诉信息表")
-public class ComplaintInfo extends Model<ComplaintInfo> {
+@TableName("house_picture")
+@ApiModel(value = "HousePicture对象", description = "房源图片表")
+public class HousePicture extends Model<HousePicture> {
 
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty("图片ID")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @ApiModelProperty("房源ID")
     private Long houseId;
 
-    @ApiModelProperty("投诉内容")
-    private String content;
+    @ApiModelProperty("图片顺序")
+    private Integer orderNum;
 
-    @ApiModelProperty("投诉状态 0-待处理 1-申诉中 2-已处理")
-    private String status;
+    @ApiModelProperty("图片地址")
+    private String imgUrl;
 
 
     @Override

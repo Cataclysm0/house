@@ -3,7 +3,7 @@
 <mapper namespace="com.pzhu.house.mapper.system.SysUserMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.system.SysUser">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.system.SysUser">
         <id column="id" property="id" />
         <result column="username" property="username" />
         <result column="password" property="password" />

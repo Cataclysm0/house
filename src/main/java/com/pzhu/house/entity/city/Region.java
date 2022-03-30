@@ -1,8 +1,7 @@
-package com.pzhu.house.model.entity.city;
+package com.pzhu.house.entity.city;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -13,7 +12,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 开通城市表
+ * 大区表
  * </p>
  *
  * @author WuSJ
@@ -22,17 +21,17 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("open_city")
-@ApiModel(value = "OpenCity对象", description = "开通城市表")
-public class OpenCity extends Model<OpenCity> {
+@ApiModel(value = "Region对象", description = "大区表")
+public class Region extends Model<Region> {
 
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty("大区ID")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    @ApiModelProperty("开通城市")
-    private Long cityId;
+    @ApiModelProperty("大区名称")
+    private String name;
 
 
     @Override

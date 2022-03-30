@@ -3,7 +3,7 @@
 <mapper namespace="com.pzhu.house.mapper.lease.ComplaintInfoMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.lease.ComplaintInfo">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.lease.ComplaintInfo">
         <id column="id" property="id" />
         <result column="house_id" property="houseId" />
         <result column="content" property="content" />

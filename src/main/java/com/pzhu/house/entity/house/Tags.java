@@ -1,4 +1,4 @@
-package com.pzhu.house.model.entity.city;
+package com.pzhu.house.entity.house;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -12,26 +12,29 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 大区表
+ * 标签表
  * </p>
  *
  * @author WuSJ
- * @since 2022-03-27
+ * @since 2022-03-30
  */
 @Getter
 @Setter
 @Accessors(chain = true)
-@ApiModel(value = "Region对象", description = "大区表")
-public class Region extends Model<Region> {
+@ApiModel(value = "Tags对象", description = "标签表")
+public class Tags extends Model<Tags> {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty("大区ID")
+    @ApiModelProperty("标签ID")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    @ApiModelProperty("大区名称")
-    private String name;
+    @ApiModelProperty("房源ID")
+    private Long houseId;
+
+    @ApiModelProperty("标签内容")
+    private String content;
 
 
     @Override

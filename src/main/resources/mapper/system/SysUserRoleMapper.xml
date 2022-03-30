@@ -3,13 +3,13 @@
 <mapper namespace="com.pzhu.house.mapper.system.SysUserRoleMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.system.SysUserRole">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.system.SysUserRole">
         <id column="id" property="id"/>
         <result column="user_id" property="userId"/>
         <result column="role_id" property="roleId"/>
     </resultMap>
 
-    <insert id="insertUserRole" parameterType="com.pzhu.house.model.entity.system.SysUserRole">
+    <insert id="insertUserRole" parameterType="com.pzhu.house.entity.system.SysUserRole">
         insert into sys_user_role(
         <if test="userId != null and userId != 0">user_id,</if>
         <if test="roleId != null and roleId != 0">role_id</if>

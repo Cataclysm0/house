@@ -8,7 +8,7 @@ import com.pzhu.house.common.constant.Constants;
 import com.pzhu.house.exception.BaseException;
 import com.pzhu.house.exception.captcha.CaptchaIncorrectException;
 import com.pzhu.house.exception.captcha.CaptchaExpireException;
-import com.pzhu.house.model.entity.system.SysUser;
+import com.pzhu.house.entity.system.SysUser;
 import com.pzhu.house.service.admin.IAdminLoginService;
 import com.pzhu.house.service.system.ISysUserService;
 import com.pzhu.house.utils.ServletUtils;

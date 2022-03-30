@@ -1,7 +1,7 @@
 package com.pzhu.house.mapper.city;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.pzhu.house.model.entity.city.Region;
+import com.pzhu.house.entity.city.Region;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

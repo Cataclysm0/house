@@ -1,38 +1,19 @@
-package com.pzhu.house.model.entity.lease;
+package com.pzhu.house.model.dto.lease;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import com.pzhu.house.model.dto.base.OutputConverter;
+import com.pzhu.house.entity.house.HouseInfo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
+import lombok.Data;
 
-/**
- * <p>
- * 房源信息表
- * </p>
- *
- * @author WuSJ
- * @since 2022-03-27
- */
-@Getter
-@Setter
-@Accessors(chain = true)
-@TableName("house_info")
-@ApiModel(value = "HouseInfo对象", description = "房源信息表")
-public class HouseInfo extends Model<HouseInfo> {
+import java.io.Serializable;
+import java.math.BigDecimal;
 
-    private static final long serialVersionUID = 1L;
+@Data
+@ApiModel("HouseInfoDTO")
+public class HouseInfoDTO implements OutputConverter<HouseInfoDTO, HouseInfo>, Serializable {
 
     @ApiModelProperty("房源ID")
-    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @ApiModelProperty("房东ID")
@@ -85,27 +66,5 @@ public class HouseInfo extends Model<HouseInfo> {
 
     @ApiModelProperty("联系人姓名")
     private String contactName;
-
-    @ApiModelProperty("乐观锁")
-    @Version
-    private Long revision;
-
-    @ApiModelProperty("创建人")
-    private String createdBy;
-
-    @ApiModelProperty("创建时间")
-    private LocalDateTime createdTime;
-
-    @ApiModelProperty("更新人")
-    private String updatedBy;
-
-    @ApiModelProperty("更新时间")
-    private LocalDateTime updatedTime;
-
-
-    @Override
-    public Serializable pkVal() {
-        return this.id;
-    }
 
 }

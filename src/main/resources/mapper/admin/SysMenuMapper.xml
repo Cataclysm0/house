@@ -3,7 +3,7 @@
 <mapper namespace="com.pzhu.house.mapper.admin.SysMenuMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.admin.SysMenu">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.admin.SysMenu">
         <result column="id" property="id" />
         <result column="parent_id" property="parentId" />
         <result column="path" property="path" />

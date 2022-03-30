@@ -1,6 +1,6 @@
 package com.pzhu.house.mapper.city;
 
-import com.pzhu.house.model.entity.city.RegionCity;
+import com.pzhu.house.entity.city.RegionCity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

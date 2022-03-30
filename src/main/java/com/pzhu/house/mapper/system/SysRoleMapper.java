@@ -1,6 +1,6 @@
 package com.pzhu.house.mapper.system;
 
-import com.pzhu.house.model.entity.system.SysRole;
+import com.pzhu.house.entity.system.SysRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

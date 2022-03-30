@@ -1,6 +1,6 @@
 package com.pzhu.house.mapper.lease;
 
-import com.pzhu.house.model.entity.lease.LeaseInfo;
+import com.pzhu.house.entity.lease.LeaseInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

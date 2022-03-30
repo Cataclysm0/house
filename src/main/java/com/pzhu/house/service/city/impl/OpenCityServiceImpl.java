@@ -2,7 +2,7 @@ package com.pzhu.house.service.city.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pzhu.house.mapper.city.OpenCityMapper;
-import com.pzhu.house.model.entity.city.OpenCity;
+import com.pzhu.house.entity.city.OpenCity;
 import com.pzhu.house.service.city.IOpenCityService;
 import org.springframework.stereotype.Service;
 

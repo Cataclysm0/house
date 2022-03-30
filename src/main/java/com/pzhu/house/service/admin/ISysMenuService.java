@@ -1,6 +1,6 @@
 package com.pzhu.house.service.admin;
 
-import com.pzhu.house.model.entity.admin.SysMenu;
+import com.pzhu.house.entity.admin.SysMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

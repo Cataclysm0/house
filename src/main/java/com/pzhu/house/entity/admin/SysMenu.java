@@ -1,12 +1,8 @@
-package com.pzhu.house.model.entity.system;
+package com.pzhu.house.entity.admin;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-
-import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
@@ -17,31 +13,42 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 角色表
+ * 菜单表
  * </p>
  *
  * @author WuSJ
- * @since 2022-03-15
+ * @since 2022-03-17
  */
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("sys_role")
-@ApiModel(value = "SysRole对象", description = "角色表")
-public class SysRole extends Model<SysRole> {
+@TableName("sys_menu")
+@ApiModel(value = "SysMenu对象", description = "菜单表")
+public class SysMenu extends Model<SysMenu> {
 
-    @Serial
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty("角色ID")
-    @TableId(value = "id", type = IdType.AUTO)
+    @ApiModelProperty("菜单ID")
     private Long id;
 
-    @ApiModelProperty("角色名称")
-    private String roleName;
+    @ApiModelProperty("父ID")
+    private Long parentId;
 
-    @ApiModelProperty("角色标识")
-    private String roleKey;
+    @ApiModelProperty("路径")
+    private String path;
+
+    private String name;
+
+    @ApiModelProperty("菜单标签")
+    private String label;
+
+    @ApiModelProperty("菜单图标")
+    private String icon;
+
+    private String url;
+
+    @ApiModelProperty("顺序")
+    private Integer orderNum;
 
     @ApiModelProperty("乐观锁")
     @Version
@@ -62,7 +69,7 @@ public class SysRole extends Model<SysRole> {
 
     @Override
     public Serializable pkVal() {
-        return this.id;
+        return null;
     }
 
 }

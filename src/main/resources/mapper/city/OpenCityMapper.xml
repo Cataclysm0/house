@@ -3,7 +3,7 @@
 <mapper namespace="com.pzhu.house.mapper.city.OpenCityMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.pzhu.house.model.entity.city.OpenCity">
+    <resultMap id="BaseResultMap" type="com.pzhu.house.entity.city.OpenCity">
         <id column="id" property="id" />
         <result column="city_id" property="cityId" />
     </resultMap>

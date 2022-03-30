@@ -1,6 +1,6 @@
 package com.pzhu.house.service.lease;
 
-import com.pzhu.house.model.entity.lease.ComplaintInfo;
+import com.pzhu.house.entity.lease.ComplaintInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,7 +1,9 @@
 package com.pzhu.house.service.city;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pzhu.house.model.entity.city.Region;
+import com.pzhu.house.entity.city.Region;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +15,5 @@ import com.pzhu.house.model.entity.city.Region;
  */
 public interface IRegionService extends IService<Region> {
 
+    List<Region> getAllRegions();
 }

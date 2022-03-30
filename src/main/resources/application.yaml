@@ -43,7 +43,7 @@ spring:
 
 # mybatis-plus配置
 mybatis-plus:
-  type-aliases-package: com.pzhu.house.model.entity
+  type-aliases-package: com.pzhu.house.entity
   mapper-locations: classpath*:/mapper/**/*Mapper.xml
 
 # 日志配置

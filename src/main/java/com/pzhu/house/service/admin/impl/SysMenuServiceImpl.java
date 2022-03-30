@@ -1,7 +1,7 @@
 package com.pzhu.house.service.admin.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.pzhu.house.model.entity.admin.SysMenu;
+import com.pzhu.house.entity.admin.SysMenu;
 import com.pzhu.house.mapper.admin.SysMenuMapper;
 import com.pzhu.house.service.admin.ISysMenuService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
